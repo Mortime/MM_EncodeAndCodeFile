@@ -16,6 +16,10 @@
 		59182B5F1D645BC900842352 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59182B5D1D645BC900842352 /* LaunchScreen.storyboard */; };
 		59182B6A1D645BCA00842352 /* MMEncodeAndCodeFileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59182B691D645BCA00842352 /* MMEncodeAndCodeFileTests.m */; };
 		59182B751D645BCA00842352 /* MMEncodeAndCodeFileUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59182B741D645BCA00842352 /* MMEncodeAndCodeFileUITests.m */; };
+		59182B851D645C7800842352 /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 59182B841D645C7800842352 /* NSData+AES.m */; };
+		59182B8C1D645C8200842352 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 59182B881D645C8200842352 /* GTMBase64.m */; };
+		59182B8D1D645C8200842352 /* NSString+BASE64.m in Sources */ = {isa = PBXBuildFile; fileRef = 59182B8B1D645C8200842352 /* NSString+BASE64.m */; };
+		59182B911D645C8A00842352 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 59182B901D645C8A00842352 /* NSString+MD5.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,15 @@
 		59182B701D645BCA00842352 /* MMEncodeAndCodeFileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMEncodeAndCodeFileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59182B741D645BCA00842352 /* MMEncodeAndCodeFileUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMEncodeAndCodeFileUITests.m; sourceTree = "<group>"; };
 		59182B761D645BCA00842352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59182B831D645C7800842352 /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
+		59182B841D645C7800842352 /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
+		59182B871D645C8200842352 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		59182B881D645C8200842352 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		59182B891D645C8200842352 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		59182B8A1D645C8200842352 /* NSString+BASE64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BASE64.h"; sourceTree = "<group>"; };
+		59182B8B1D645C8200842352 /* NSString+BASE64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BASE64.m"; sourceTree = "<group>"; };
+		59182B8F1D645C8A00842352 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		59182B901D645C8A00842352 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +116,9 @@
 		59182B4B1D645BC900842352 /* MMEncodeAndCodeFile */ = {
 			isa = PBXGroup;
 			children = (
+				59182B8E1D645C8A00842352 /* MD5 */,
+				59182B861D645C8200842352 /* BASE64 */,
+				59182B821D645C7800842352 /* AES */,
 				59182B4F1D645BC900842352 /* AppDelegate.h */,
 				59182B501D645BC900842352 /* AppDelegate.m */,
 				59182B521D645BC900842352 /* ViewController.h */,
@@ -141,6 +157,36 @@
 				59182B761D645BCA00842352 /* Info.plist */,
 			);
 			path = MMEncodeAndCodeFileUITests;
+			sourceTree = "<group>";
+		};
+		59182B821D645C7800842352 /* AES */ = {
+			isa = PBXGroup;
+			children = (
+				59182B831D645C7800842352 /* NSData+AES.h */,
+				59182B841D645C7800842352 /* NSData+AES.m */,
+			);
+			path = AES;
+			sourceTree = "<group>";
+		};
+		59182B861D645C8200842352 /* BASE64 */ = {
+			isa = PBXGroup;
+			children = (
+				59182B871D645C8200842352 /* GTMBase64.h */,
+				59182B881D645C8200842352 /* GTMBase64.m */,
+				59182B891D645C8200842352 /* GTMDefines.h */,
+				59182B8A1D645C8200842352 /* NSString+BASE64.h */,
+				59182B8B1D645C8200842352 /* NSString+BASE64.m */,
+			);
+			path = BASE64;
+			sourceTree = "<group>";
+		};
+		59182B8E1D645C8A00842352 /* MD5 */ = {
+			isa = PBXGroup;
+			children = (
+				59182B8F1D645C8A00842352 /* NSString+MD5.h */,
+				59182B901D645C8A00842352 /* NSString+MD5.m */,
+			);
+			path = MD5;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,10 +319,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59182B851D645C7800842352 /* NSData+AES.m in Sources */,
+				59182B8C1D645C8200842352 /* GTMBase64.m in Sources */,
+				59182B911D645C8A00842352 /* NSString+MD5.m in Sources */,
 				59182B5A1D645BC900842352 /* MMEncodeAndCodeFile.xcdatamodeld in Sources */,
 				59182B541D645BC900842352 /* ViewController.m in Sources */,
 				59182B511D645BC900842352 /* AppDelegate.m in Sources */,
 				59182B4E1D645BC900842352 /* main.m in Sources */,
+				59182B8D1D645C8200842352 /* NSString+BASE64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
